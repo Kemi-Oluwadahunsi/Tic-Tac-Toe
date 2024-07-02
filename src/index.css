@@ -1,0 +1,36 @@
+@layer tailwind-base, antd;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.vehicleid {
+  font-size: 3rem;
+}
+
+.boardBox {
+  -webkit-box-shadow:0px 0px 16px 6px rgba(80,48,37,0.8);
+-moz-box-shadow: 0px 0px 16px 6px rgba(80,48,37,0.8);
+box-shadow: 0px 0px 16px 6px rgba(80,48,37,0.8);
+border-radius: 5px;
+}
+
+
