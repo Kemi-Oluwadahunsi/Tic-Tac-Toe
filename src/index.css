@@ -6,7 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -27,10 +26,151 @@
 }
 
 .boardBox {
-  -webkit-box-shadow:0px 0px 16px 6px rgba(80,48,37,0.8);
--moz-box-shadow: 0px 0px 16px 6px rgba(80,48,37,0.8);
-box-shadow: 0px 0px 16px 6px rgba(80,48,37,0.8);
-border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 16px 6px rgba(80, 48, 37, 0.8);
+  -moz-box-shadow: 0px 0px 16px 6px rgba(80, 48, 37, 0.8);
+  box-shadow: 0px 0px 16px 6px rgba(80, 48, 37, 0.8);
+  border-radius: 5px;
+  position: relative;
 }
 
+/* .strike-line {
+  position: absolute;
 
+  background-color: red;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+} */
+
+/* .strike-visible {
+  opacity: 1;
+} */
+/* 
+.strike-row-1 {
+  top: 16.6%;
+  left: 0;
+  width: 100%;
+} */
+
+/* .strike-row-2 {
+  top: 50%;
+  left: 0;
+  width: 100%;
+}
+
+.strike-row-3 {
+  top: 83.3%;
+  left: 0;
+  width: 100%;
+}
+
+.strike-col-1 {
+  left: calc(16.6% - 2px);
+  top: 0;
+  bottom: 0;
+  width: 4px;
+}
+
+.strike-col-2 {
+  left: calc(50% - 2px);
+  top: 0;
+  bottom: 0;
+  width: 4px;
+}
+
+.strike-col-3 {
+  left: calc(83.3% - 2px);
+  top: 0;
+  bottom: 0;
+  width: 4px;
+}
+
+.strike-diag-1 {
+  top: 50%;
+  left: 0;
+  width: calc(100% + 4px);
+  height: 4px;
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+.strike-diag-2 {
+  top: 50%;
+  left: 0;
+  width: calc(100% + 4px);
+  height: 4px;
+  transform: rotate(-45deg);
+  transform-origin: center;
+} */
+
+.strike-line {
+  position: absolute;
+  background-color: #3f0c0b;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.strike-visible {
+  opacity: 1;
+}
+
+.strike-row-1 {
+  top: calc(16.6% - 2px);
+  left: 4%;
+  width: calc(100% - 30px);
+  height: 4px;
+}
+
+.strike-row-2 {
+  top: calc(50% - 2px);
+  left: 4%;
+  width: calc(100% - 30px);
+  height: 4px;
+}
+
+.strike-row-3 {
+  top: calc(83.3% - 2px);
+  left: 4%;
+  width: calc(100% - 30px);
+  height: 4px;
+}
+
+.strike-col-1 {
+  left: calc(16.6% - 2px);
+  top: 4%;
+  width: 4px;
+  height: calc(100% - 20px);
+}
+
+.strike-col-2 {
+  left: calc(50% - 2px);
+  top: 4%;
+  width: 4px;
+  height: calc(100% - 20px);
+}
+
+.strike-col-3 {
+  left: calc(83.3% - 2px);
+  top: 4%;
+  width: 4px;
+  height: calc(100% - 20px);
+}
+
+.strike-diag-1 {
+  top: 52%;
+  left: 0;
+  width: calc(100% + 20px);
+  height: 4px;
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+.strike-diag-2 {
+  top: 52%;
+  left: 0;
+  width: calc(100% + 20px);
+  height: 4px;
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
